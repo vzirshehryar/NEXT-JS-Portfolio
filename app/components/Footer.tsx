@@ -1,38 +1,76 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
+
+import Styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center bg-blue-900 text-slate-100 px-5 py-3">
-        <div className="row flex justify-center items-center">
-            <Link href="" className="row flex justify-center items-center gap-3 text-sm m-3 hover:text-slate-400 w-fit">
-                <Image src="/icons/linkedin.svg" alt="LinkedIn" width={20} height={20}/>
-                <p>Linkedn Profile</p>
-            </Link>
+    <footer className={Styles.footer}>
+      <div className={Styles.links}>
+        <div>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/jobs/view/3550573002"
+            title="https://www.linkedin.com/jobs/view/3550573002"
+          >
+            <Image
+              src="/icons/linkedin.svg"
+              alt="LinkedIn"
+              width={20}
+              height={20}
+            />
+            <p>Linkedn Profile</p>
+          </Link>
         </div>
-        <div className="row flex justify-center items-center">
-            <Link href="" className="row flex justify-center items-center gap-3 text-sm m-3 hover:text-slate-400 w-fit">
-                <Image src="/icons/github.svg" alt="GitHub" width={20} height={20}/>
-                <p>GitHub Profile</p>
-            </Link>
+        <div>
+          <Link
+            target="_blank"
+            href="https://github.com/vzirshehryar"
+            title="https://github.com/vzirshehryar"
+          >
+            <Image
+              src="/icons/github.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+            />
+            <p>GitHub Profile</p>
+          </Link>
         </div>
-        <div className="row flex justify-center items-center">
-            <Link href="" className="row flex justify-center items-center gap-3 text-sm m-3 hover:text-slate-400 w-fit">
-                <Image src="/icons/envelope-regular.svg" alt="Gmail" width={20} height={20}/>
-                <p>Email Address</p>
-            </Link>    
+        <div>
+          <Link
+            target="_blank"
+            href="vzirshehryar@gmail.com"
+            title="vzirshehryar@gmail.com"
+          >
+            <Image
+              src="/icons/envelope-regular.svg"
+              alt="Gmail"
+              width={20}
+              height={20}
+            />
+            <p>Email Address</p>
+          </Link>
         </div>
-        <div className="row flex justify-center items-center">
-            <Link href="" className="row flex justify-center items-center gap-3 text-sm m-3 hover:text-slate-400 w-fit">
-                <Image src="/icons/hackerrank.svg" alt="Hacker Rank" width={20} height={20}/>
-                <p>Hacker Rank</p>
-            </Link>
+        <div>
+          <Link
+            target="_blank"
+            href="https://www.hackerrank.com/vzirshehryar?h_r=internal-search&hr_r=1"
+            title="https://www.hackerrank.com/vzirshehryar?h_r=internal-search&hr_r=1"
+          >
+            <Image
+              src="/icons/hackerrank.svg"
+              alt="Hacker Rank"
+              width={20}
+              height={20}
+            />
+            <p>Hacker Rank</p>
+          </Link>
         </div>
-        <div className="row flex justify-center items-center gap-3 text-sm m-3 md:col-span-2 lg:col-span-4">
-            <p className="text-sm text-center">Copyright &#169; 2023 </p>
-        </div>
+      </div>
+      <p>Copyright &#169; 2023 </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

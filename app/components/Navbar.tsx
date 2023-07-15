@@ -1,27 +1,60 @@
-import Link from "next/link"
+"use client";
+import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+
+import Styles from "./navbar.module.css";
 
 const Navbar = () => {
-  return (
-    <nav className="flex flex-row justify-between items-center bg-blue-900 text-slate-100 px-5 py-3 h-14 sticky top-0">
-        <div className="logo">
-            <Link className="text-2xl py-1 px-2 cursor-pointer hover:bg-blue-950 rounded" href="/">Shery</Link>
-        </div>
-        <div className="right flex flex-row justify-between gap-3">
-            <div className="flex items-center justify-center">
-                <Link className="py-1 px-2 cursor-pointer hover:bg-blue-950 rounded" href="/about">About</Link>
-            </div>
-            <div className="flex items-center justify-center">
-                <Link className="py-1 px-2 cursor-pointer hover:bg-blue-950 rounded" href="/projects">Projects</Link>
-            </div>
-            <div className="flex items-center justify-center">
-                <Link className="py-1 px-2 cursor-pointer hover:bg-blue-950 rounded" href="/expertise">Expertise</Link>
-            </div>
-            <div className="flex items-center justify-center">
-                <Link className="py-1 px-2 cursor-pointer hover:bg-blue-950 rounded" href="/contact">Contact</Link>
-            </div>
-        </div>
-    </nav>
-  )
-}
+  const [navbar, setNavbar] = useState(-400);
 
-export default Navbar
+  const inOutNavbar = () => {
+    if (navbar === -400) {
+      setNavbar(60);
+    } else {
+      setNavbar(-400);
+    }
+  };
+  return (
+    <nav className={Styles.navbar}>
+      <div className={Styles.logo}>
+        <img src="/images/Logo.jpg" alt="Wazir Shehryar Ali" width={60} />
+      </div>
+      <div className={Styles.box} style={{ top: navbar }}>
+        <Link
+          className={Styles.link}
+          href="/about"
+          onClick={() => setNavbar(-400)}
+        >
+          About
+        </Link>
+        <Link
+          className={Styles.link}
+          href="/skills"
+          onClick={() => setNavbar(-400)}
+        >
+          Skills
+        </Link>
+        <Link
+          className={Styles.link}
+          href="/projects"
+          onClick={() => setNavbar(-400)}
+        >
+          Projects
+        </Link>
+        <Link
+          className={Styles.link}
+          href="/contact"
+          onClick={() => setNavbar(-400)}
+        >
+          Contact Me
+        </Link>
+      </div>
+      <div className={Styles.threeBar} onClick={inOutNavbar}>
+        {navbar === -400 ? <FaBars /> : <FaTimes />}
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
