@@ -24,7 +24,9 @@
 .image {
   background-position: center;
   object-fit: cover;
-  width: 30%;
+  width: 50%;
+  max-width: 500px;
+  min-width: 200px;
   aspect-ratio: 1/1;
 
   border-radius: 50%;
