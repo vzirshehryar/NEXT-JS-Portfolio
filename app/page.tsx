@@ -1,15 +1,20 @@
-import Image from "next/image";
-import Contact from "./(pages)/contact/page";
-import Link from "next/link";
+import Styles from "./page.module.css";
+
 export default function Home() {
   return (
-    <main className="" style={{ height: "120vh" }}>
-      {/* <Image src="/favicon.ico" alt="Fav-Icon" width={100} height={100} /> */}
-      <Link href="/">Contact</Link>
-      <Link href="/about">Contact</Link>
-      <Link href="/projects">Contact</Link>
-      <Link href="/skills">Contact</Link>
-      <Link href="/contact">Contact</Link>
+    <main className={Styles.main} id="main">
+      <h1>Hi! Wazir Shehryar Here</h1>
+      <p>
+        <strong>Full Stack Web & Android App Development :</strong>
+        <br />
+        Empowering Businesses, Innovative Solutions and Seamless Experiences.
+      </p>
+      <img
+        src="/images/4333097.jpg"
+        className={Styles.image}
+        alt="Web Development"
+      />
+      <img src="/images/hero-devices.svg" alt="Web Development" width="90%" />
     </main>
   );
 }

@@ -18,33 +18,35 @@ const Navbar = () => {
   return (
     <nav className={Styles.navbar}>
       <div className={Styles.logo}>
-        <img src="/images/Logo.jpg" alt="Wazir Shehryar Ali" width={60} />
+        <Link href="#main">
+          <img src="/images/LogoImp.png" alt="Wazir Shehryar Ali" />
+        </Link>
       </div>
       <div className={Styles.box} style={{ top: navbar }}>
         <Link
           className={Styles.link}
-          href="/about"
+          href="#about"
           onClick={() => setNavbar(-400)}
         >
           About
         </Link>
         <Link
           className={Styles.link}
-          href="/skills"
+          href="#skills"
           onClick={() => setNavbar(-400)}
         >
           Skills
         </Link>
         <Link
           className={Styles.link}
-          href="/projects"
+          href="#projects"
           onClick={() => setNavbar(-400)}
         >
           Projects
         </Link>
         <Link
           className={Styles.link}
-          href="/contact"
+          href="#contact"
           onClick={() => setNavbar(-400)}
         >
           Contact Me

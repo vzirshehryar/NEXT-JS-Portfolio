@@ -1,0 +1,31 @@
+.main {
+  background-color: #4e4e50;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+}
+.main h1 {
+  font: 40px eurostile sans-serif;
+  max-width: 500px;
+  margin: 70px 0 40px 0;
+  text-align: center;
+}
+.main p {
+  font-size: 24px;
+  max-width: 900px;
+  text-align: center;
+  line-height: 30px;
+}
+.main img {
+  margin-top: 100px;
+}
+.image {
+  background-position: center;
+  object-fit: cover;
+  width: 30%;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+}

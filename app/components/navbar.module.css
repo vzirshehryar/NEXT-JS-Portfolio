@@ -12,8 +12,8 @@
 .logo {
   cursor: pointer;
 }
-.logo > img {
-  mix-blend-mode: color-burn;
+.logo img {
+  width: 45px;
 }
 .box {
   display: flex;
