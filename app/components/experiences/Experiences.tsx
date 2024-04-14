@@ -71,8 +71,10 @@ const Box = ({
         <h4>{companyName}</h4>
         <span>{date}</span>
         <ul>
-          {tasks.map((task) => (
-            <li className="list-disc">{task}</li>
+          {tasks.map((task, key) => (
+            <li key={key} className="list-disc">
+              {task}
+            </li>
           ))}
         </ul>
       </div>

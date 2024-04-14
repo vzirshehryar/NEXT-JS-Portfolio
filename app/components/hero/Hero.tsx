@@ -10,7 +10,7 @@ const Hero = () => {
         Hey.
       </div>
       <div className="text-center font-bold text-[35px] sm:text-[45px] md:text-[60px] lg:text-[70px] m-0">
-        I'm Wazir Shehryar
+        {"I'm Wazir Shehryar"}
       </div>
       <div className="text-center text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] m-0 mb-3">
         Full Stack <span className="text-[#D32D20]">Developer|</span>
