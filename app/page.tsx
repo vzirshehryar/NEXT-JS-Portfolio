@@ -1,20 +1,19 @@
-import Styles from "./page.module.css";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Experiences from "./components/experiences/Experiences";
+import Hero from "./components/hero/Hero";
+import Projects from "./components/projects/Projects";
+import Skills from "./components/skills/Skills";
 
 export default function Home() {
   return (
-    <main className={Styles.main} id="main">
-      <h1>Hi! Wazir Shehryar Here</h1>
-      <p>
-        <strong>Full Stack Web & Android App Development :</strong>
-        <br />
-        Empowering Businesses, Innovative Solutions and Seamless Experiences.
-      </p>
-      <img
-        src="/images/4333097.jpg"
-        className={Styles.image}
-        alt="Web Development"
-      />
-      <img src="/images/hero-devices.svg" alt="Web Development" width="90%" />
-    </main>
+    <section className="max-w-[1400px]">
+      <Hero />
+      <About />
+      <Experiences />
+      <Skills />
+      <Projects />
+      <Contact />
+    </section>
   );
 }

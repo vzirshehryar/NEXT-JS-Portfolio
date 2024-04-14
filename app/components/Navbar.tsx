@@ -1,9 +1,7 @@
 "use client";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-
-import Styles from "./navbar.module.css";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(-400);
@@ -16,44 +14,72 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className={Styles.navbar}>
-      <div className={Styles.logo}>
-        <Link href="#main">
-          <img src="/images/LogoImp.png" alt="Wazir Shehryar Ali" />
+    <nav className="navbar_shadow flex justify-between items-center min-w-[300px] w-[75%] sm:w-[560px] lg:w-[900px] fixed left-1/2 transform -translate-x-1/2 z-10 top-9 bg-secondary text-secondary p-1.5 rounded-full bg-opacity-70 px-5 py-2.5">
+      <div className="">
+        <Link href="#HERO">
+          <Image
+            src="/images/logoblue.png"
+            alt="Wazir Shehryar Ali"
+            width="35"
+            height="35"
+          />
         </Link>
       </div>
-      <div className={Styles.box} style={{ top: navbar }}>
+      <div className="hidden sm:flex gap-1">
         <Link
-          className={Styles.link}
-          href="#about"
+          className={`px-2 py-1 rounded-md text-lg hover:bg-secondaryHover font-semibold transition-[1s]`}
+          href="#ABOUT"
           onClick={() => setNavbar(-400)}
         >
           About
         </Link>
         <Link
-          className={Styles.link}
-          href="#skills"
+          className={`px-2 py-1 rounded-md text-lg hover:bg-secondaryHover font-semibold transition-[1s]`}
+          href="#EXPERIENCE"
+          onClick={() => setNavbar(-400)}
+        >
+          Experience
+        </Link>
+        <Link
+          className={`px-2 py-1 rounded-md text-lg hover:bg-secondaryHover font-semibold transition-[1s]`}
+          href="#SKILLS"
           onClick={() => setNavbar(-400)}
         >
           Skills
         </Link>
         <Link
-          className={Styles.link}
-          href="#projects"
+          className={`px-2 py-1 rounded-md text-lg hover:bg-secondaryHover font-semibold transition-[1s]`}
+          href="#PROJECTS"
           onClick={() => setNavbar(-400)}
         >
           Projects
         </Link>
         <Link
-          className={Styles.link}
-          href="#contact"
+          className={`px-2 py-1 rounded-md text-lg hover:bg-secondaryHover font-semibold transition-[1s]`}
+          href="#CONTACT"
           onClick={() => setNavbar(-400)}
         >
           Contact Me
         </Link>
       </div>
-      <div className={Styles.threeBar} onClick={inOutNavbar}>
-        {navbar === -400 ? <FaBars /> : <FaTimes />}
+      <div onClick={inOutNavbar} className="block sm:hidden">
+        {navbar === -400 ? (
+          <Image
+            className="ml-4"
+            src="/icons/Hamburger Menu.svg"
+            alt=""
+            width={30}
+            height={30}
+          />
+        ) : (
+          <Image
+            className="ml-4"
+            src="/icons/Cross.svg"
+            alt=""
+            width={30}
+            height={30}
+          />
+        )}
       </div>
     </nav>
   );

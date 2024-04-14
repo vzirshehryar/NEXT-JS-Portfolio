@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,8 +9,89 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Europa;
+  font-family: "Barlow", sans-serif;
 }
-a {
-  text-decoration: none;
+.navbar_shadow {
+  box-shadow: 0px 2px 5px 5px rgba(140, 139, 141, 0.2);
+}
+.my_section {
+  padding: 30px 15px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1099px) {
+  /* Add your tablet styles here */
+  .my_section {
+    padding: 45px 25px;
+  }
+  h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  /* Add your desktop styles here */
+  .my_section {
+    padding: 60px 40px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
 }

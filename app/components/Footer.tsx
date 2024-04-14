@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Styles from "./footer.module.css";
-
 const Footer = () => {
   return (
-    <footer className={Styles.footer}>
-      <div className={Styles.links}>
-        <div>
+    <footer className="w-full max-w-[1400px] flex justify-center items-center flex-col gap-8 py-[60px] px-5 bg-secondary text-secondary">
+      <div className="flex flex-wrap justify-center items-center gap-7">
+        <div className="w-[200px] flex justify-center">
           <Link
+            className="flex gap-2"
             target="_blank"
             href="https://www.linkedin.com/jobs/view/3550573002"
             title="https://www.linkedin.com/jobs/view/3550573002"
@@ -19,11 +18,12 @@ const Footer = () => {
               width={20}
               height={20}
             />
-            <p>Linkedn Profile</p>
+            <p className="text-[16px]">Linkedn Profile</p>
           </Link>
         </div>
-        <div>
+        <div className="w-[200px] flex justify-center">
           <Link
+            className="flex gap-2"
             target="_blank"
             href="https://github.com/vzirshehryar"
             title="https://github.com/vzirshehryar"
@@ -34,11 +34,12 @@ const Footer = () => {
               width={20}
               height={20}
             />
-            <p>GitHub Profile</p>
+            <p className="text-[16px]">GitHub Profile</p>
           </Link>
         </div>
-        <div>
+        <div className="w-[200px] flex justify-center">
           <Link
+            className="flex gap-2"
             target="_blank"
             href="vzirshehryar@gmail.com"
             title="vzirshehryar@gmail.com"
@@ -49,11 +50,12 @@ const Footer = () => {
               width={20}
               height={20}
             />
-            <p>Email Address</p>
+            <p className="text-[16px]">Email Address</p>
           </Link>
         </div>
-        <div>
+        <div className="w-[200px] flex justify-center">
           <Link
+            className="flex gap-2"
             target="_blank"
             href="https://www.hackerrank.com/vzirshehryar?h_r=internal-search&hr_r=1"
             title="https://www.hackerrank.com/vzirshehryar?h_r=internal-search&hr_r=1"
@@ -64,7 +66,7 @@ const Footer = () => {
               width={20}
               height={20}
             />
-            <p>Hacker Rank</p>
+            <p className="text-[16px]">Hacker Rank</p>
           </Link>
         </div>
       </div>
