@@ -30,8 +30,8 @@ const Experiences = () => {
   return (
     <section className="my_section bg-primary2" id="EXPERIENCE">
       <h1>Experience</h1>
-      <div className="pl-[40px]">
-        <div className="border-l-white border-l-[3px] relative flex flex-col gap-5">
+      <div className="pl-[20px]">
+        <div className="border-l-white border-l-[2px] relative flex flex-col gap-5">
           <Box {...EXPERIENCES[0]} />
           <Box {...EXPERIENCES[1]} />
         </div>
@@ -57,22 +57,24 @@ const Box = ({
 }) => {
   return (
     <div className="relative">
-      <div className="absolute left-[-33px] top-[13%] w-16 h-16 rounded-full -500 flex justify-center items-center border-white border-[2px]">
+      <div className="absolute left-[-24px] top-[30px] w-12 h-12 rounded-full -500 flex justify-center items-center border-white border-[2px]">
         <Image
           className="rounded-full"
           src={logo}
           alt="logo"
-          width={64}
-          height={64}
+          width={48}
+          height={48}
         />
       </div>
-      <div className="bg-primary ml-10 p-5 rounded-2xl shadow-2xl relative">
-        <h3>{jobTitle}</h3>
-        <h4>{companyName}</h4>
-        <span>{date}</span>
+      <div className="bg-[#3A3F50] ml-8 p-6 rounded-2xl shadow-2xl relative">
+        <h3 className="mb-2">{jobTitle}</h3>
+        <div className="flex gap-2 items-center mb-1">
+          <h4 className="font-semibold text-[18px]">{companyName}</h4>
+          <span className="text-slate-300 text-[14px] ">{date}</span>
+        </div>
         <ul>
           {tasks.map((task, key) => (
-            <li key={key} className="list-disc">
+            <li key={key} className="list-disc ml-4">
               {task}
             </li>
           ))}

@@ -1,5 +1,5 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Cross">
-<path id="Vector" d="M3.75781 3.75781L8.00045 8.00045M8.00045 8.00045L12.2431 12.2431M8.00045 8.00045L3.75781 12.2431M8.00045 8.00045L12.2431 3.75781" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector" d="M3.75781 3.75781L8.00045 8.00045M8.00045 8.00045L12.2431 12.2431M8.00045 8.00045L3.75781 12.2431M8.00045 8.00045L12.2431 3.75781" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>

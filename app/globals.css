@@ -11,9 +11,6 @@ html {
   padding: 0;
   font-family: "Barlow", sans-serif;
 }
-.navbar_shadow {
-  box-shadow: 0px 2px 5px 5px rgba(140, 139, 141, 0.2);
-}
 .my_section {
   padding: 30px 15px;
 }
