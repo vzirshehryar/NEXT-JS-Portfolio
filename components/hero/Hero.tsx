@@ -21,7 +21,7 @@ const Hero = () => {
                 innovative and efficient software solutions. With 3 years of
                 experience in developing dynamic web applications across various
                 domains, I bring a unique blend of technical expertise and
-                creative problem-solving. Currently, I'm focused on helping
+                creative problem-solving. Currently, I am focused on helping
                 startups and established businesses turn their digital visions
                 into reality, leveraging cutting-edge technologies
             </p>
