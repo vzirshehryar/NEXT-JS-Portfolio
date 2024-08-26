@@ -110,7 +110,7 @@ const Contact = () => {
                         disabled={loading}
                     >
                         {loading && <Loader size="20px" />}
-                        <p>Submit</p>
+                        <p className="m-0">Submit</p>
                     </button>
                 </div>
             </form>
