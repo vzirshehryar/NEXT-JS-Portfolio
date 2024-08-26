@@ -26,7 +26,7 @@ const Hero = () => {
                 into reality, leveraging cutting-edge technologies
             </p>
             <div className="flex justify-center items-center gap-4 md:gap-6 lg:gap-10">
-                <button className="bg-[#7731FF] px-4 py-2 rounded-lg shadow-2xl hover:bg-[#7711FF] font-semibold">
+                <button className="bg-[#7731FF] px-4 py-3 rounded-lg shadow-2xl hover:bg-[#7711FF] font-semibold">
                     <Link
                         href="/WazirResume.pdf"
                         download={true}
@@ -35,7 +35,7 @@ const Hero = () => {
                         Download Resume
                     </Link>
                 </button>
-                <button className="bg-[#7731FF] px-4 py-2 rounded-lg shadow-2xl hover:bg-[#7711FF] font-semibold">
+                <button className="bg-[#7731FF] px-4 py-3 rounded-lg shadow-2xl hover:bg-[#7711FF] font-semibold">
                     <Link rel="stylesheet" href="/about">
                         Learn More About Me
                     </Link>

@@ -7,9 +7,9 @@ const Skills = () => {
         <section className="my_section bg-primary2" id="SKILLS">
             <h1>Skills</h1>
             <div className="p-4 columns-1 md:columns-2 lg:columns-3 space-y-4 mx-auto">
-                {SKILLS.map((skill) => (
+                {SKILLS.map((skill, ind) => (
                     <Box
-                        key={skill.title}
+                        key={ind}
                         image={skill.image}
                         title={skill.title}
                         array={skill.array}
@@ -38,10 +38,10 @@ function Box({
                 <p className="text-2xl font-semibold">{title}</p>
             </div>
             <div className="flex flex-wrap justify-start gap-2">
-                {array.map((item) => (
+                {array.map((item, ind) => (
                     <p
                         className="py-2 px-3 rounded-xl bg-[#182D2F] text-[#2CD2BD]"
-                        key={title}
+                        key={ind}
                     >
                         {item}
                     </p>
