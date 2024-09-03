@@ -5,7 +5,10 @@ import React from "react";
 
 const Experiences = () => {
     return (
-        <section className="my_section grid place-items-center" id="EXPERIENCE">
+        <section
+            className="my_section grid place-items-center"
+            id="experiences"
+        >
             <h1 className="w-full">Experience</h1>
             <div className="pl-[20px] md:hidden">
                 <div className="border-l-white border-l-[2px] relative flex flex-col gap-5">

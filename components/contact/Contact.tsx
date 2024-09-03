@@ -53,7 +53,7 @@ const Contact = () => {
         setLoading(false);
     };
     return (
-        <section className="my_section bg-primary2" id="CONTACT">
+        <section className="my_section bg-primary2" id="contact">
             <h1>Contact Me</h1>
             <form onSubmit={submit} className="px-4 mx-auto max-w-[600px]">
                 <div className="mb-5">

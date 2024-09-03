@@ -27,13 +27,14 @@ const Hero = () => {
             </p>
             <div className="flex justify-center items-center gap-4 md:gap-6 lg:gap-10">
                 <button className="bg-[#7731FF] p-2 lg:px-4 lg:py-3 rounded-lg shadow-2xl hover:bg-[#7711FF] font-semibold">
-                    <Link
+                    <a
                         href="/WazirResume.pdf"
-                        download={true}
+                        download="WazirResume.pdf"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Download Resume
-                    </Link>
+                    </a>
                 </button>
                 <button className="bg-[#7731FF] p-2 lg:px-4 lg:py-3 rounded-lg shadow-2xl hover:bg-[#7711FF] font-semibold">
                     <Link rel="stylesheet" href="/about">

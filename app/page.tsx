@@ -9,9 +9,9 @@ export default function Home() {
     return (
         <section className="max-w-[1400px]">
             <Hero />
-            <Experiences />
             <Skills />
             <Projects />
+            <Experiences />
             <Contact />
         </section>
     );
