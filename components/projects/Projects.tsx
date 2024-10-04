@@ -105,13 +105,14 @@ function Project({
         <div className="bg-[#131724] p-6 rounded-lg shadow-lg w-full">
             <div className="relative group">
                 <Image
+                    style={{ aspectRatio: "4/3" }}
                     src={image}
                     alt={title}
                     width={400}
                     height={400}
-                    className=" w-full rounded-sm aspect-square object-cover"
+                    className=" w-full rounded-sm object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm text-white rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <a
                         href={liveLink ? liveLink : githubLink}
                         target="_blank"
