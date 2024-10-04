@@ -119,7 +119,15 @@ function Project({
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm text-white rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <a
-                            href={liveLink ? liveLink : githubLink}
+                            href={
+                                liveLink
+                                    ? liveLink
+                                    : recordedVideoLink
+                                    ? recordedVideoLink
+                                    : githubLink
+                                    ? githubLink
+                                    : ""
+                            }
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-5 rounded-xl bg-[#ecf0f490]"
