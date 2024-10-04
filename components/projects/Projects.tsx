@@ -1,6 +1,5 @@
 import { GitHubIcon, RedirectIcon } from "@/svgIcons";
 import Image from "next/image";
-import { title } from "process";
 import React from "react";
 
 type typeOfProjects = {
@@ -30,6 +29,22 @@ const PROJECTS: typeOfProjects[] = [
         liveLink: "https://app.penpulseai.com",
     },
     {
+        image: "/projectImages/Recruito.png",
+        title: "Recruito",
+        description:
+            "This is an app for companies to hire and job seeker to apply for jobs.",
+        tags: [
+            "React.js",
+            "Tailwind CSS",
+            "Javascript",
+            "Mongo DB",
+            "REST APIs",
+            "Vercel",
+            "AWS",
+        ],
+        githubLink: "https://github.com/vzirshehryar/Recruitor_App",
+    },
+    {
         image: "/projectImages/PhotoEditor.png",
         title: "Photo Editor",
         description:
@@ -54,7 +69,7 @@ const PROJECTS: typeOfProjects[] = [
         githubLink: "https://github.com/vzirshehryar/Antematter-Frontend-Test",
     },
     {
-        image: "/projectImages/portfolio.png",
+        image: "/projectImages/Portfolio.png",
         title: "Portfolio",
         description: "This is my Portfolio",
         tags: ["Next.js", "Tailwind CSS", "Typescript", "Vercel"],
@@ -92,9 +107,9 @@ function Project({
                 <Image
                     src={image}
                     alt={title}
-                    width={40}
-                    height={40}
-                    className="w-full rounded-sm aspect-square object-cover"
+                    width={400}
+                    height={400}
+                    className=" w-full rounded-sm aspect-square object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <a

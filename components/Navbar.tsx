@@ -81,7 +81,7 @@ const Navbar = () => {
                     Contact Me
                 </Link>
             </div>
-            <div onClick={inOutNavbar} className="block sm:hidden">
+            {/* <div onClick={inOutNavbar} className="block sm:hidden">
                 {navbar === -400 ? (
                     <Image
                         className="ml-4"
@@ -99,7 +99,7 @@ const Navbar = () => {
                         height={28}
                     />
                 )}
-            </div>
+            </div> */}
         </nav>
     );
 };
