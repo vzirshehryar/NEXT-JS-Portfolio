@@ -51,7 +51,7 @@ jobs:
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ env.AZURE_WEBAPP_NAME }}
+        name: node-app
         path: .
 
   deploy:
@@ -67,7 +67,7 @@ jobs:
     - name: Download artifact from build job
       uses: actions/download-artifact@v3
       with:
-        name: ${{ env.AZURE_WEBAPP_NAME }}
+        name: node-app
 
     - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp
